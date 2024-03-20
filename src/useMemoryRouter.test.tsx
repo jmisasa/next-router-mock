@@ -146,7 +146,7 @@ export function useRouterTests(singletonRouter: MemoryRouter, useRouter: () => M
 
   it("following history", async () => {
     const { result } = renderHook(() => useRouter());
-    result.current.setCurrentUrl("/")
+    result.current.setCurrentUrl("/");
     await act(async () => {
       await result.current.push("/one");
     });
@@ -162,7 +162,7 @@ export function useRouterTests(singletonRouter: MemoryRouter, useRouter: () => M
       await result.current.replace("/four");
     });
     expect(result.current.history.index).toBe(3); // replace does not change history index
-  })
+  });
 }
 
 describe("useMemoryRouter", () => {
