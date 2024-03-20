@@ -1,5 +1,5 @@
 {
-  "name": "next-router-mock",
+  "name": "@jmisasa/next-router-mock",
   "version": "0.9.12",
   "description": "Mock implementation of the Next.js Router",
   "main": "dist/index",
