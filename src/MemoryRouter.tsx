@@ -212,7 +212,7 @@ export class MemoryRouter extends BaseRouter {
  */
 function parseUrlToCompleteUrl(url: Url, currentPathname: string): UrlObjectComplete {
   const parsedUrl = typeof url === "object" ? url : parseUrl(url);
-  const query = parsedUrl.search ? querystring.parse(parsedUrl.search) : parsedUrl.query ?? {}
+  const query = parsedUrl.search ? querystring.parse(parsedUrl.search) : parsedUrl.query ?? {};
 
   return {
     pathname: normalizeTrailingSlash(parsedUrl.pathname ?? currentPathname),
